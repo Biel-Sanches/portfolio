@@ -414,6 +414,32 @@ a:focus-visible {
   border-color: var(--cor-destaque);
 }
 
+.projeto-breve {
+  background: var(--cor-superficie);
+  border: 1px dashed var(--cor-borda);
+  border-radius: var(--raio);
+  padding: 3rem 2rem;
+  max-width: 34rem;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.projeto-breve .emoji {
+  display: block;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.projeto-breve h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.projeto-breve p {
+  color: var(--cor-texto-suave);
+  margin-bottom: 1.5rem;
+}
+
 /* ===== Contato ===== */
 
 .contato {
