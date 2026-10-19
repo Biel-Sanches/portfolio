@@ -1,20 +1,20 @@
 /* ==========================================================================
-   Portfólio Gabriel Sanches — dark premium
-   Espaço escuro com grão sutil, tipografia display (Space Grotesk),
-   numeração editorial e réguas finas. Gradiente usado com parcimônia.
+   Portfólio Gabriel Sanches — lavanda clara (modo dia)
+   Papel lavanda suave, tinta roxa profunda, acentos violeta/fucsia.
+   Tipografia display, numeração editorial e grão sutil de papel.
    ========================================================================== */
 
 :root {
-  --cor-fundo: #0a0f1e;
-  --cor-fundo-alternada: #0d1426;
-  --cor-superficie: #101830;
-  --cor-borda: rgba(148, 163, 184, 0.16);
-  --cor-borda-forte: rgba(148, 163, 184, 0.3);
-  --cor-texto: #e6eaf2;
-  --cor-texto-suave: #8b94a7;
-  --cor-destaque: #38bdf8;
-  --cor-destaque-2: #818cf8;
-  --gradiente: linear-gradient(120deg, #38bdf8, #818cf8);
+  --cor-fundo: #241b44;
+  --cor-fundo-alternada: #2a2052;
+  --cor-superficie: #322763;
+  --cor-borda: rgba(196, 181, 253, 0.16);
+  --cor-borda-forte: rgba(196, 181, 253, 0.32);
+  --cor-texto: #f0edfa;
+  --cor-texto-suave: #b3a8d6;
+  --cor-destaque: #b19cd9;
+  --cor-destaque-2: #e879f9;
+  --gradiente: linear-gradient(120deg, #b19cd9, #e879f9);
   --fonte-display: "Space Grotesk", system-ui, sans-serif;
   --fonte-texto: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --transicao: 0.25s ease;
@@ -37,14 +37,14 @@ body {
   font-family: var(--fonte-texto);
   background-color: var(--cor-fundo);
   background-image:
-    radial-gradient(900px 480px at 85% -10%, rgba(56, 189, 248, 0.10), transparent 65%),
-    radial-gradient(900px 480px at -10% 40%, rgba(129, 140, 248, 0.07), transparent 65%);
+    radial-gradient(900px 480px at 85% -10%, rgba(177, 156, 217, 0.10), transparent 65%),
+    radial-gradient(900px 480px at -10% 40%, rgba(232, 121, 249, 0.06), transparent 65%);
   color: var(--cor-texto);
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
 }
 
-/* grão sutil por cima de tudo (textura de papel/filme) */
+/* grão sutil por cima de tudo (textura de papel) */
 body::after {
   content: "";
   position: fixed;
@@ -57,7 +57,7 @@ body::after {
 
 ::selection {
   background: var(--cor-destaque);
-  color: #04121f;
+  color: #241b44;
 }
 
 ::-webkit-scrollbar {
@@ -69,13 +69,13 @@ body::after {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #26314e;
+  background: #443770;
   border-radius: 999px;
   border: 2px solid var(--cor-fundo);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #33415f;
+  background: #564789;
 }
 
 .container {
@@ -99,7 +99,7 @@ h1, h2, h3 {
   position: sticky;
   top: 0;
   z-index: 10;
-  background: rgba(10, 15, 30, 0.75);
+  background: rgba(36, 27, 68, 0.8);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--cor-borda);
@@ -187,8 +187,9 @@ a:focus-visible {
   font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 0.04em;
-  color: #6ee7b7;
-  border: 1px solid rgba(110, 231, 183, 0.25);
+  color: #86efac;
+  border: 1px solid rgba(134, 239, 172, 0.3);
+  background: rgba(134, 239, 172, 0.06);
   border-radius: 999px;
   padding: 0.3rem 0.9rem;
   margin-bottom: 1.75rem;
@@ -198,8 +199,8 @@ a:focus-visible {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: #6ee7b7;
-  box-shadow: 0 0 0 3px rgba(110, 231, 183, 0.18);
+  background: #86efac;
+  box-shadow: 0 0 0 3px rgba(134, 239, 172, 0.15);
 }
 
 .hero-kicker {
@@ -276,7 +277,7 @@ a:focus-visible {
   font-size: clamp(2.8rem, 6vw, 4rem);
   font-weight: 700;
   letter-spacing: 0.04em;
-  background-image: radial-gradient(60% 60% at 30% 25%, rgba(56, 189, 248, 0.14), transparent 70%);
+  background-image: radial-gradient(60% 60% at 30% 25%, rgba(177, 156, 217, 0.12), transparent 70%);
   color: var(--cor-destaque);
 }
 
@@ -541,7 +542,7 @@ a:focus-visible {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--cor-destaque);
-  border: 1px solid rgba(56, 189, 248, 0.35);
+  border: 1px solid rgba(177, 156, 217, 0.4);
   border-radius: 999px;
   padding: 0.2rem 0.65rem;
 }
@@ -621,12 +622,12 @@ a:focus-visible {
 
 .botao-primario {
   background: var(--gradiente);
-  color: #04121f;
+  color: #241b44;
 }
 
 .botao-primario:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 26px rgba(56, 189, 248, 0.3);
+  box-shadow: 0 8px 26px rgba(177, 156, 217, 0.3);
 }
 
 .botao-secundario {
