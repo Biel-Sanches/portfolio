@@ -326,13 +326,8 @@ a:focus-visible {
 
 .projetos-grade {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 19rem), 1fr));
   gap: 1.5rem;
-}
-
-.projetos-grade--unica {
-  grid-template-columns: minmax(0, 24rem);
-  justify-content: center;
 }
 
 .projeto-card {
