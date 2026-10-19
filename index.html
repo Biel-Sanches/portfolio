@@ -4,10 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Portfólio de Gabriel Sanches — estudante de Análise e Desenvolvimento de Sistemas com foco em back-end e desenvolvimento de jogos." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Gabriel Sanches · Portfólio" />
+  <meta property="og:description" content="Estudante de ADS · foco em Back-end e desenvolvimento de jogos. Projetos em Java, MySQL e web." />
+  <meta property="og:image" content="https://biel-sanches.github.io/portfolio/img/og.png" />
+  <meta property="og:url" content="https://biel-sanches.github.io/portfolio/" />
+  <meta name="twitter:card" content="summary_large_image" />
   <title>Gabriel Sanches · Portfólio</title>
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -16,28 +23,28 @@
     <nav class="container navegacao">
       <a href="#inicio" class="logo">gsanches<span>.dev</span></a>
       <ul class="menu">
-        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
         <li><a href="#tecnologias">Tecnologias</a></li>
         <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#contato">Contato</a></li>
+        <li><a href="#contato" class="menu-cta">Contato</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
 
-    <!-- ===== Apresentação ===== -->
+    <!-- ===== 00 · Apresentação ===== -->
     <section id="inicio" class="hero">
       <div class="container hero-conteudo">
         <div class="hero-texto">
-          <p class="hero-saudacao">Olá, eu sou</p>
-          <h1 class="hero-titulo">Gabriel Sanches</h1>
-          <p class="hero-subtitulo">Estudante de ADS · <span class="destaque">Back-end</span> e <span class="destaque">Jogos</span></p>
+          <p class="disponibilidade"><span class="ponto"></span>Aberto a oportunidades</p>
+          <p class="hero-kicker">Olá, eu sou</p>
+          <h1 class="hero-titulo">Gabriel <em>Sanches</em></h1>
+          <p class="hero-subtitulo">Estudante de ADS, foco em <span>Back-end</span> e <span>Jogos</span></p>
           <p class="hero-descricao">
             Sou estudante de Análise e Desenvolvimento de Sistemas, com formação técnica em TI
-            e interesse em desenvolvimento de software, especialmente back-end e jogos. Estou
-            sempre buscando aprender novas tecnologias, aprimorar minhas habilidades e
-            transformar ideias em projetos.
+            e interesse em desenvolvimento de software. Estou sempre buscando aprender novas
+            tecnologias, aprimorar minhas habilidades e transformar ideias em projetos.
           </p>
           <div class="hero-acoes">
             <a href="#projetos" class="botao botao-primario">Ver projetos</a>
@@ -50,52 +57,95 @@
       </div>
     </section>
 
-    <!-- ===== Tecnologias ===== -->
-    <section id="tecnologias" class="secao">
+    <!-- ===== 01 · Sobre ===== -->
+    <section id="sobre" class="secao">
       <div class="container">
-        <div class="secao-cabecalho">
+        <div class="secao-cabecalho revelar">
+          <span class="secao-numero">01</span>
+          <h2>Sobre mim</h2>
+        </div>
+        <div class="sobre-grade">
+          <div class="sobre-texto revelar">
+            <p>
+              Comecei na tecnologia pela formação técnica em TI e hoje curso
+              <strong>Análise e Desenvolvimento de Sistemas</strong>. Gosto de entender
+              como as coisas funcionam por baixo do capô — por isso meu interesse em
+              <strong>back-end</strong>: dados, regras de negócio e sistemas que resolvem
+              problemas reais.
+            </p>
+            <p>
+              Também sou fã de jogos, e ver uma ideia minha ganhando vida na tela é o que
+              me motiva a estudar <strong>desenvolvimento de jogos</strong> por conta própria.
+            </p>
+            <ul class="sobre-fatos">
+              <li><strong>Graduação</strong>Análise e Desenvolvimento de Sistemas (em andamento)</li>
+              <li><strong>Base</strong>Formação técnica em TI</li>
+              <li><strong>Interesses</strong>Back-end, bancos de dados e jogos</li>
+            </ul>
+          </div>
+          <aside class="sobre-filosofia revelar">
+            <h3>Como eu trabalho</h3>
+            <ol>
+              <li><span>01</span>Aprender fazendo — projeto real vale mais que teoria solta</li>
+              <li><span>02</span>Simples antes de complexo — código que se entende dura mais</li>
+              <li><span>03</span>Construir em público — cada projeto vai pro GitHub</li>
+            </ol>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 02 · Tecnologias ===== -->
+    <section id="tecnologias" class="secao secao-alternada">
+      <div class="container">
+        <div class="secao-cabecalho revelar">
+          <span class="secao-numero">02</span>
           <h2>Tecnologias</h2>
-          <p>Ferramentas e linguagens que uso no dia a dia para estudar, praticar e construir projetos.</p>
+          <p>As ferramentas que uso hoje para estudar, praticar e construir projetos.</p>
         </div>
 
         <div class="tech-grade">
-          <div class="tech-grupo">
+          <div class="tech-grupo revelar">
             <h3>Back-end</h3>
             <ul class="chips">
               <li>Java</li>
             </ul>
           </div>
-          <div class="tech-grupo">
+          <div class="tech-grupo revelar">
             <h3>Banco de dados</h3>
             <ul class="chips">
               <li>MySQL</li>
             </ul>
           </div>
-          <div class="tech-grupo">
+          <div class="tech-grupo revelar">
             <h3>Front-end</h3>
             <ul class="chips">
               <li>HTML</li>
               <li>CSS</li>
+              <li>JavaScript</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ===== Projetos ===== -->
-    <section id="projetos" class="secao secao-alternada">
+    <!-- ===== 03 · Projetos ===== -->
+    <section id="projetos" class="secao">
       <div class="container">
-        <div class="secao-cabecalho">
+        <div class="secao-cabecalho revelar">
+          <span class="secao-numero">03</span>
           <h2>Projetos</h2>
           <p>Do terminal ao navegador: jogos e sistemas em Java e web — e mais por vir.</p>
         </div>
 
         <div class="projetos-grade">
-          <article class="projeto-card">
-            <div class="projeto-capa capa-3">🐍</div>
+          <article class="projeto-card revelar">
+            <a class="projeto-capa" href="https://biel-sanches.github.io/jogo-da-cobrinha/" target="_blank" rel="noopener" aria-label="Ver demo do Jogo da Cobrinha">
+              <img src="img/jogo-da-cobrinha.jpg" alt="Captura de tela do Jogo da Cobrinha com tema neon" loading="lazy" />
+            </a>
             <div class="projeto-corpo">
               <h3>Jogo da Cobrinha</h3>
-              <p>O clássico Snake no navegador: controles por teclado e toque, pontuação com recorde salvo e dificuldade progressiva.</p>
+              <p>O clássico Snake no navegador: animação suave, controles por teclado e toque, pontuação com recorde salvo e dificuldade progressiva.</p>
               <ul class="tags">
                 <li>HTML</li>
                 <li>CSS</li>
@@ -108,8 +158,10 @@
             </div>
           </article>
 
-          <article class="projeto-card">
-            <div class="projeto-capa capa-2">💰</div>
+          <article class="projeto-card revelar">
+            <a class="projeto-capa" href="https://github.com/Biel-Sanches/controle-financeiro" target="_blank" rel="noopener" aria-label="Ver repositório do Controle Financeiro">
+              <img src="img/controle-financeiro.jpg" alt="Captura de tela do Controle Financeiro com visual neo-brutalista" loading="lazy" />
+            </a>
             <div class="projeto-corpo">
               <h3>Controle Financeiro Pessoal</h3>
               <p>Sistema em Java com versão terminal (CSV) e web (API REST + MySQL): resumo mensal, contas a pagar, metas, análise de gastos e exportação de relatórios.</p>
@@ -127,17 +179,20 @@
       </div>
     </section>
 
-    <!-- ===== Contato ===== -->
-    <section id="contato" class="secao contato">
-      <div class="container contato-conteudo">
-        <h2>Vamos conversar?</h2>
+    <!-- ===== 04 · Contato ===== -->
+    <section id="contato" class="secao secao-alternada contato">
+      <div class="container contato-conteudo revelar">
+        <div class="secao-cabecalho centralizado">
+          <span class="secao-numero">04</span>
+          <h2>Vamos conversar?</h2>
+        </div>
         <p>
           Tem um projeto em mente, uma oportunidade ou só quer trocar uma ideia?
-          Me chame por e-mail ou pelas redes sociais — respondo rapidinho!
+          Me chame por e-mail ou pelo GitHub — respondo rapidinho!
         </p>
         <a href="mailto:Gabriel.dm.sanches@gmail.com" class="botao botao-primario">Gabriel.dm.sanches@gmail.com</a>
         <ul class="redes">
-          <li><a href="https://github.com/Biel-Sanches" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://github.com/Biel-Sanches" target="_blank" rel="noopener">GitHub ↗</a></li>
         </ul>
       </div>
     </section>
@@ -150,5 +205,6 @@
     </div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
